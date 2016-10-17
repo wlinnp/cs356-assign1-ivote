@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="IVoteSimulation:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/IVoteSimulation_jar</output-path>
+    <root id="archive" name="IVoteSimulation.jar">
+      <element id="module-output" name="IVoteSimulation" />
+      <element id="module-test-output" name="IVoteSimulation" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

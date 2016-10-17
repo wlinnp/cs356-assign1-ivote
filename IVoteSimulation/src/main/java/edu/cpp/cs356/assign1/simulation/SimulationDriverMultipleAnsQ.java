@@ -40,6 +40,6 @@ public class SimulationDriverMultipleAnsQ extends SimulationDriver {
     }
 
     public void submitInputs() {
-        myService = new IVoteService(allAnswers, new MultipleAnswer());
+        iVote = new IVoteService(allAnswers, new MultipleAnswer());
     }
 }

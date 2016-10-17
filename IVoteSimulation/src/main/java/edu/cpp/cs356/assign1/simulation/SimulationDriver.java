@@ -33,7 +33,7 @@ public abstract class SimulationDriver {
     protected Question question;
     protected List<Pair<Student, Answer>> allAnswers = new ArrayList<Pair<Student, Answer>>();
     protected Random random = new Random();
-    protected IVote myService;
+    protected IVote iVote;
     private Student[] studentGroup = new Student[totalStudents];
 
     protected abstract void createQuestion();
@@ -108,7 +108,7 @@ public abstract class SimulationDriver {
                 + question.getCandidates().toString()
                 + IVote.LINE_SEPARATOR
                 + printAllInputs()
-                + myService.displayStatistics()
+                + iVote.displayStatistics()
                 + "Correct Answer(s): "
                 + question.printCorrectAnswer()
                 + IVote.LINE_SEPARATOR);

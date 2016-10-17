@@ -1,5 +1,6 @@
 package edu.cpp.cs356.assign1;
 
+import edu.cpp.cs356.assign1.ivote.IVote;
 import edu.cpp.cs356.assign1.simulation.SimulationDriver;
 import edu.cpp.cs356.assign1.simulation.SimulationDriverMultipleAnsQ;
 import edu.cpp.cs356.assign1.simulation.SimulationDriverSingleAnsQ;
@@ -14,11 +15,13 @@ import edu.cpp.cs356.assign1.simulation.SimulationDriverSingleAnsQ;
 public class Main {
     public static void main(String[] args) {
         SimulationDriver singleQuestionTest = new SimulationDriverSingleAnsQ();
+        System.out.println("Single Answer Question Test" + IVote.LINE_SEPARATOR);
         singleQuestionTest.createInputs();
         singleQuestionTest.submitInputs();
         singleQuestionTest.viewResults();
 
         SimulationDriver multipleQuestionTest = new SimulationDriverMultipleAnsQ();
+        System.out.println("Multiple Answer Question Test" + IVote.LINE_SEPARATOR);
         multipleQuestionTest.createInputs();
         multipleQuestionTest.submitInputs();
         multipleQuestionTest.viewResults();

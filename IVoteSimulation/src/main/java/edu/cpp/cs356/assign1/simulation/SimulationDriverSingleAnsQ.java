@@ -29,6 +29,6 @@ public class SimulationDriverSingleAnsQ extends SimulationDriver {
     }
 
     public void submitInputs() {
-        myService = new IVoteService(allAnswers, new SingleAnswer());
+        iVote = new IVoteService(allAnswers, new SingleAnswer());
     }
 }
